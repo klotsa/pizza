@@ -7,9 +7,9 @@
 
 ## Description
 
-_Provides users with a variety of options to create an unforgettable pizza ordering experience, including toppings, size, choices of cheese and crust_
+Provides users with a variety of options to create an unforgettable pizza ordering experience, including toppings, size, choices of cheese and crust
 
-_Behavior
+Behavior
 
 The program takes user input through radio buttons and checkboxes and  calculates the total price of pizza. Users could select up to 13 toppings $.5 ea, pick cheese or skip it, select one of two crusts, and one of four sizes.
 Input: no toppings, no cheese, small size ($2), thin crust ($2)
@@ -22,9 +22,9 @@ Expected Output: 7.5
 
 ## Setup/Installation Requirements
 
-* _Visit https://github.com/klotsa/pizza_
-* _Clone from github_
-* _Open in Chrome_
+* Visit https://github.com/klotsa/pizza
+* Clone from github
+* Open in Chrome_
 
 
 ## Known Bugs
