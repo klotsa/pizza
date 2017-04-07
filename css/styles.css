@@ -1,6 +1,6 @@
 .pizza-price {
   display: none;
-  padding-top: 20px;
+  padding-top: 30px;
   font-family: Garamond;
   font-size: 2em;
   font-weight: bold;
@@ -10,9 +10,10 @@
 
 #header {
   background-color: #a20012;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   color: white;
+  font-size: 3.5em;
 }
 
 #header > p {
