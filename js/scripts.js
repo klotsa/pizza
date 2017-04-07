@@ -22,7 +22,7 @@ Price.prototype.pizzaPrice = function() {
     sizeCost = 2;
   } else if (this.pizzaSize === "medium") {
     sizeCost = 3;
-  } else if (this.pizzSize === "large") {
+  } else if (this.pizzaSize === "large") {
     sizeCost = 4;
   } else {
     sizeCost = 5;
@@ -71,9 +71,9 @@ $(document).ready(function() {
   $(".pizza-type").text(newPrice.pizzaSize);
   $(".toppings").text(pizzaTopings.length);
   $(".crust").text(newPrice.crust);
-  $(".cheese").text(", " + newPrice.cheese + " cheese,");
-  $("#result").text(newPrice.pizzaPrice());
-  $(".tax").text("$" + newPrice.pizzaPrice()/10);
+//  $(".cheese").text(", " + newPrice.cheese + " cheese,");
+  $("#result").text("$" + newPrice.pizzaPrice());
+  $(".tax").text(newPrice.pizzaPrice()/10);
   $("input").filter(':checkbox').prop('checked',false);
   });
 });
