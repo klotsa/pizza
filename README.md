@@ -14,11 +14,9 @@ _Behavior_
 
 ## Setup/Installation Requirements
 
-* _https://github.com/klotsa/pizza_
-* _Clone for github_
+* _Visit https://github.com/klotsa/pizza_
+* _Clone from github_
 * _Open in Chrome_
-
-
 
 
 ## Known Bugs
@@ -31,7 +29,7 @@ _Contact the developing team_
 
 ## Technologies Used
 
-_HTML, CSS, JS, Jquery, Bootstrap_
+_HTML, CSS, JS, jQuery, Bootstrap_
 
 ### License
 

@@ -16,9 +16,7 @@ Price.prototype.pizzaPrice = function() {
 
   for (var i = 0; i < pizzaTopings.length; i++) {
     topsCost = pizzaTopings.length * 0.5;
-
   }
-    //alert("top cost = $" + topsCost);
 
   if (this.pizzaSize === "small") {
     sizeCost = 2;
@@ -36,9 +34,9 @@ Price.prototype.pizzaPrice = function() {
     crustCost = 1;
   }
 
-  if (this.cheese === "2") {
+  if (this.cheese === "feta") {
     cheeseCost = 1;
-  } else if (this.cheese === "1") {
+  } else if (this.cheese === "mozzarella" || this.cheese === "colby jack") {
     cheeseCost = 0.5;
   } else {
     cheeseCost = 0;
@@ -47,8 +45,6 @@ Price.prototype.pizzaPrice = function() {
   //alert(topsCost + sizeCost + crustCost);
   return topsCost + sizeCost + crustCost + cheeseCost;
 }
-
-
 
 
 ////////////////////////////////////////////////////
@@ -71,6 +67,11 @@ $(document).ready(function() {
   //alert("cheese #" + cheeseInput);
   var newPrice = new Price(pizzaTopings, sizeInput, crustInput, cheeseInput);
   $(".pizza-price").show();
+
+  $(".pizza-type").text(newPrice.pizzaSize);
+  $(".toppings").text(pizzaTopings.length);
+  $(".crust").text(newPrice.crust);
+  $(".cheese").text(", " + newPrice.cheese + " cheese,");
   $("#result").text(newPrice.pizzaPrice());
   $("input").filter(':checkbox').prop('checked',false);
   });
