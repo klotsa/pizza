@@ -5,58 +5,79 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>The Pizza Round</title>
+    <title>The Perfect Pizza</title>
   </head>
   <body>
     <div class="container">
-      <h1>Order a Pizza!</h1>
+      <h1>Order a Perfect Pizza!</h1>
       <div class="row">
         <div class="col-md-6 jumbotron">
           <form id="form-one">
-            <p>Select a movie</p>
-            <select class="form-control" id="movie">
-              <option value="new">Beauty and the Beast</option>
+            <p>Select the Most Perfect Topings</p>
+            <!-- <select class="form-control" id="movie"> -->
+              <!-- <option value="new">Beauty and the Beast</option>
               <option value="new">Passengers</option>
-              <option value="old">Star Wars</option>
-              <option value="old">Harry Potter</option>
-            </select>
-            <br><p>Show time</p>
+              <option value="new">Star Wars</option>
+              <option value="new">Harry Potter</option> -->
+                <!-- </select> -->
+              <div class="form-group">
+                <input type="checkbox" name="tops" value="salami"> salami<br>
+                <input type="checkbox" name="tops" value="chicken"> chicken<br>
+                <input type="checkbox" name="tops" value="lamb"> lamb<br>
+                <input type="checkbox" name="tops" value="anchovies"> anchovies<br>
+                <input type="checkbox" name="tops" value="tuna"> tuna<br>
+                <input type="checkbox" name="tops" value="mushrooms"> mushrooms<br>
+                <input type="checkbox" name="tops" value="tomatoes"> tomatoes<br>
+                <input type="checkbox" name="tops" value="artichokes"> artichokes<br>
+                <input type="checkbox" name="tops" value="onions"> onions<br>
+                <input type="checkbox" name="tops" value="olives"> olives<br>
+                <input type="checkbox" name="tops" value="pickles"> pickles<br>
+                <input type="checkbox" name="tops" value="basil"> basil<br>
+                <input type="checkbox" name="tops" value="extra-cheese"> extra cheese<br>
+              </div>
+            <br><p>Pick the Perfect size</p>
             <div class="radio">
               <label>
-              <input type="radio" name="show-time" value="day" checked>
-               Day
+              <input type="radio" name="size" value="small" checked>
+               small
               </label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="show-time" value="evening">
-               Evening
-              </label>
-            </div>
-            <br><p>Age</p>
-            <div class="radio">
-              <label>
-              <input type="radio" name="age" value="youth" checked>
-               Under 13
+              <input type="radio" name="size" value="medium">
+               medium
               </label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="age" value="adult">
-               14 - 64
+              <input type="radio" name="size" value="large">
+               large
               </label>
             </div>
             <div class="radio">
               <label>
-              <input type="radio" name="age" value="senior">
-               Over 65
+              <input type="radio" name="size" value="xl">
+               x-large
               </label>
             </div>
-            <button type=submit class="btn bg-primary">Check Price!</button>
+            <br><p>Choose the Perfect Crust</p>
+            <div class="radio">
+              <label>
+              <input type="radio" name="crust" value="thin" checked>
+               thin
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="crust" value="thick">
+               thick
+              </label>
+            </div>
+            <button type=submit class="btn bg-primary">Get the Price!</button>
           </form>
         </div>
-        <div class="col-md-6 ticket-price">
-          <h4>The total ticket cost is: $<span id="result"><span></h4>
+        <div class="col-md-6 pizza-price">
+          <h4>The perfect pizza cost is: $<span id="result"><span></h4>
         </div>
       </div>
     </div>
