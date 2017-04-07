@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>The Pizza Round</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Order a Pizza!</h1>
+      <div class="row">
+        <div class="col-md-6 jumbotron">
+          <form id="form-one">
+            <p>Select a movie</p>
+            <select class="form-control" id="movie">
+              <option value="new">Beauty and the Beast</option>
+              <option value="new">Passengers</option>
+              <option value="old">Star Wars</option>
+              <option value="old">Harry Potter</option>
+            </select>
+            <br><p>Show time</p>
+            <div class="radio">
+              <label>
+              <input type="radio" name="show-time" value="day" checked>
+               Day
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="show-time" value="evening">
+               Evening
+              </label>
+            </div>
+            <br><p>Age</p>
+            <div class="radio">
+              <label>
+              <input type="radio" name="age" value="youth" checked>
+               Under 13
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="age" value="adult">
+               14 - 64
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+              <input type="radio" name="age" value="senior">
+               Over 65
+              </label>
+            </div>
+            <button type=submit class="btn bg-primary">Check Price!</button>
+          </form>
+        </div>
+        <div class="col-md-6 ticket-price">
+          <h4>The total ticket cost is: $<span id="result"><span></h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
