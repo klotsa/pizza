@@ -8,38 +8,33 @@
     <title>The Perfect Pizza</title>
   </head>
   <body>
+   <div id="header">
+    <p>Perfect Pizza Parlour<img src="img/icon.png" class="logo"></p>
+   </div>
     <div class="container">
-      <h1>Perfect Pizza Parlour</h1>
-      <h3>Order a Perfect Pizza!</h3>
       <div class="row">
-        <div class="col-md-6 jumbotron">
+        <div class="col-md-10 jumbotron">
+          <div class="col-md-6 jumbotron">
           <form id="form-one">
-            <p>Select the Most Perfect Topings</p>
-            <p>Just	50&#162; each</p>
-            <!-- <select class="form-control" id="movie"> -->
-              <!-- <option value="new">Beauty and the Beast</option>
-              <option value="new">Passengers</option>
-              <option value="new">Star Wars</option>
-              <option value="new">Harry Potter</option> -->
-                <!-- </select> -->
-              <div class="form-group">
-                <input type="checkbox" name="tops" value="1"> salami<br>
-                <input type="checkbox" name="tops" value="1"> chicken<br>
-                <input type="checkbox" name="tops" value="1"> lamb<br>
-                <input type="checkbox" name="tops" value="1"> anchovies<br>
-                <input type="checkbox" name="tops" value="1"> tuna<br>
-                <input type="checkbox" name="tops" value="1"> mushrooms<br>
-                <input type="checkbox" name="tops" value="1"> tomatoes<br>
-                <input type="checkbox" name="tops" value="1"> artichokes<br>
-                <input type="checkbox" name="tops" value="1"> onions<br>
-                <input type="checkbox" name="tops" value="1"> olives<br>
-                <input type="checkbox" name="tops" value="1"> pickles<br>
-                <input type="checkbox" name="tops" value="1"> basil<br>
-                <input type="checkbox" name="tops" value="1"> extra cheese<br>
-              </div>
-              <p>Determine the Perfect Cheese</p>
-              (or stay dairy-free)
-
+            <p class="selector"><img src="img/icon.png" class="icon">Select the Most Perfect Topings<br>
+            Just	50&#162; each</p>
+            <div class="form-group">
+              <input type="checkbox" name="tops" value="1"> salami<br>
+              <input type="checkbox" name="tops" value="1"> chicken<br>
+              <input type="checkbox" name="tops" value="1"> lamb<br>
+              <input type="checkbox" name="tops" value="1"> anchovies<br>
+              <input type="checkbox" name="tops" value="1"> tuna<br>
+              <input type="checkbox" name="tops" value="1"> mushrooms<br>
+              <input type="checkbox" name="tops" value="1"> tomatoes<br>
+              <input type="checkbox" name="tops" value="1"> artichokes<br>
+              <input type="checkbox" name="tops" value="1"> onions<br>
+              <input type="checkbox" name="tops" value="1"> olives<br>
+              <input type="checkbox" name="tops" value="1"> pickles<br>
+              <input type="checkbox" name="tops" value="1"> basil<br>
+              <input type="checkbox" name="tops" value="1"> extra cheese<br>
+            </div>
+              <p class="selector"><img src="img/icon.png" class="icon">Determine the Perfect Cheese
+              (or stay dairy-free)</p>
               <div class="radio">
                 <label>
                 <input type="radio" name="cheese" value="1">
@@ -58,51 +53,54 @@
                  Goat cheese - $1
                 </label>
               </div>
-            <br><p>Pick the Perfect Size</p>
+            <br><p class="selector"><img src="img/icon.png" class="icon">Pick the Perfect Size</p>
             <div class="radio">
               <label>
               <input type="radio" name="size" value="small" checked>
-               small
+               small - $2
               </label>
             </div>
             <div class="radio">
               <label>
               <input type="radio" name="size" value="medium">
-               medium
+               medium - $3
               </label>
             </div>
             <div class="radio">
               <label>
               <input type="radio" name="size" value="large">
-               large
+               large - $4
               </label>
             </div>
             <div class="radio">
               <label>
               <input type="radio" name="size" value="xl">
-               x-large
+               x-large - $5
               </label>
             </div>
-            <br><p>Choose the Perfect Crust</p>
+            <br><p class="selector"><img src="img/icon.png" class="icon">Choose the Perfect Crust</p>
             <div class="radio">
               <label>
               <input type="radio" name="crust" value="thin" checked>
-               gluten, dairy, and cruelty free
+               gluten, sugar, dairy, and cruelty free
               </label>
             </div>
             <div class="radio">
               <label>
               <input type="radio" name="crust" value="thick">
-               thick and nourishing
+               thick and nourishing, with a tiny bit of cruelty
               </label>
             </div>
             <br>
-            <button type=submit class="btn bg-primary">Get the Perfect Price!</button>
+            <button type=submit class="btn">Get the Perfect Price!</button>
           </form>
+          <div class="pizza-price">
+            <p class="selector"><img src="img/icon.png" class="icon">This Perfect Pizza <span class="pizza-type"><span> cost is: $<span id="result"><span> + tips</p>
+
+          </div>
         </div>
-        <div class="col-md-6 pizza-price">
-          <h4>The perfect pizza with <span class="pizza-type"><span> cost is: $<span id="result"><span></h4>
-        </div>
+
+
       </div>
     </div>
   </body>

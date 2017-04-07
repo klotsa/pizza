@@ -1,3 +1,64 @@
 .pizza-price {
   display: none;
+  padding-top: 20px;
+  font-family: Garamond;
+  font-size: 2em;
+  font-weight: bold;
+  color: #a20012;
+
+}
+
+#header {
+  background-color: #a20012;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+#header > p {
+  font-size: 3.5em;
+}
+
+body {
+  background-image: url("../img/pizza.jpg");
+}
+
+.jumbotron {
+  opacity: 0.9;
+  padding: 20px;
+  margin: 20px;
+}
+
+.btn {
+  background-color: #a20012;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: helvetica;
+  font-size: 1.5em;
+}
+
+.form-group, .radio, checkbox {
+  font-family: helvetica;
+  font-size: 1.25em;
+}
+
+.selector {
+  font-size: 1.75em;
+  font-family: Garamond;
+}
+.icon {
+  width:9%;
+  height:9%;
+  margin-right:5px;
+}
+
+.logo {
+  height: 15%;
+  width: 15%;
+}
+
+.bottom {
+  height: 100%;
+  width: 100%;
 }

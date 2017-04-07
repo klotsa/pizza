@@ -72,6 +72,6 @@ $(document).ready(function() {
   var newPrice = new Price(pizzaTopings, sizeInput, crustInput, cheeseInput);
   $(".pizza-price").show();
   $("#result").text(newPrice.pizzaPrice());
-  $('input:checkbox').removeAttr('checked');
+  $("input").filter(':checkbox').prop('checked',false);
   });
 });
