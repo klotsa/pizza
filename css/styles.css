@@ -52,11 +52,13 @@ body {
   width:9%;
   height:9%;
   margin-right:5px;
+  float:left;
 }
 
 .logo {
   height: 15%;
   width: 15%;
+
 }
 
 .bottom {

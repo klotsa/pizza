@@ -73,6 +73,7 @@ $(document).ready(function() {
   $(".crust").text(newPrice.crust);
   $(".cheese").text(", " + newPrice.cheese + " cheese,");
   $("#result").text(newPrice.pizzaPrice());
+  $(".tax").text("$" + newPrice.pizzaPrice()/10);
   $("input").filter(':checkbox').prop('checked',false);
   });
 });
