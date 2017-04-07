@@ -9,11 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <h1>Order a Perfect Pizza!</h1>
+      <h1>Perfect Pizza Parlour</h1>
+      <h3>Order a Perfect Pizza!</h3>
       <div class="row">
         <div class="col-md-6 jumbotron">
           <form id="form-one">
             <p>Select the Most Perfect Topings</p>
+            <p>Just	50&#162; each</p>
             <!-- <select class="form-control" id="movie"> -->
               <!-- <option value="new">Beauty and the Beast</option>
               <option value="new">Passengers</option>
@@ -35,7 +37,28 @@
                 <input type="checkbox" name="tops" value="1"> basil<br>
                 <input type="checkbox" name="tops" value="1"> extra cheese<br>
               </div>
-            <br><p>Pick the Perfect size</p>
+              <p>Determine the Perfect Cheese</p>
+              (or stay dairy-free)
+
+              <div class="radio">
+                <label>
+                <input type="radio" name="cheese" value="1">
+                 Mozzarella - 50&#162;
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="cheese" value="1">
+                 Colby Jack - 50&#162;
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                <input type="radio" name="cheese" value="2">
+                 Goat cheese - $1
+                </label>
+              </div>
+            <br><p>Pick the Perfect Size</p>
             <div class="radio">
               <label>
               <input type="radio" name="size" value="small" checked>
@@ -70,14 +93,15 @@
             <div class="radio">
               <label>
               <input type="radio" name="crust" value="thick">
-               thick
+               thick and nourishing
               </label>
             </div>
-            <button type=submit class="btn bg-primary">Get the Price!</button>
+            <br>
+            <button type=submit class="btn bg-primary">Get the Perfect Price!</button>
           </form>
         </div>
         <div class="col-md-6 pizza-price">
-          <h4>The perfect pizza cost is: $<span id="result"><span></h4>
+          <h4>The perfect pizza with <span class="pizza-type"><span> cost is: $<span id="result"><span></h4>
         </div>
       </div>
     </div>
